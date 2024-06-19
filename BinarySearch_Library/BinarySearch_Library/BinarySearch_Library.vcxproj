@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{088bd6ba-b5ab-467c-bfc8-a7d0afc0332c}</ProjectGuid>
-    <RootNamespace>BinarySearch</RootNamespace>
+    <ProjectGuid>{4845deae-124a-4f6f-ab46-f37b84f9acc9}</ProjectGuid>
+    <RootNamespace>BinarySearchLibrary</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="BinarySearch_Library.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
