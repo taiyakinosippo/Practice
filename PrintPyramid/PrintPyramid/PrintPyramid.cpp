@@ -22,4 +22,5 @@ int main()
 void PrintPyramid(int n)
 {
 	// ここをコーディングしてください。
+
 }

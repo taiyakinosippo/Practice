@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{52dd3735-6bc7-4b41-9305-fa75ddea8051}</ProjectGuid>
-    <RootNamespace>PrintPyramid</RootNamespace>
+    <ProjectGuid>{234b4669-a05c-40a9-85ed-b58c5ff23e61}</ProjectGuid>
+    <RootNamespace>HashSampleChainHash</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PrintPyramid.cpp" />
+    <ClInclude Include="ChainHash.h" />
+    <ClInclude Include="Member.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChainHash.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Member.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

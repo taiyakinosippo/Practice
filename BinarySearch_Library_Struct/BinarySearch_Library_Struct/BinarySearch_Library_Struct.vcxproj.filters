@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PrintPyramid.cpp">
+    <ClCompile Include="BinarySearch_Library_Struct.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

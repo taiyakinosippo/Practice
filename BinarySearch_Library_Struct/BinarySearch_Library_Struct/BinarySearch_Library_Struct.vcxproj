@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{52dd3735-6bc7-4b41-9305-fa75ddea8051}</ProjectGuid>
-    <RootNamespace>PrintPyramid</RootNamespace>
+    <ProjectGuid>{f9e93407-164e-4cb4-b5ed-3968d0bf3e5f}</ProjectGuid>
+    <RootNamespace>BinarySearchLibraryStruct</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PrintPyramid.cpp" />
+    <ClCompile Include="BinarySearch_Library_Struct.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
