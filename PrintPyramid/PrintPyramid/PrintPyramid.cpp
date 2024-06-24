@@ -22,5 +22,26 @@ int main()
 void PrintPyramid(int n)
 {
 	// ここをコーディングしてください。
-
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j <= n - i; j++)
+		{
+			if (n-i > j)
+			{
+				putchar(' ');
+			}
+			else
+			{
+				for (int k = n; k >= j; k--)
+				{
+					printf("*");
+				}
+				for (int l = 0; l < i; l++)
+				{
+					printf("*");
+				}
+			}
+		}
+		putchar('\n');
+	}
 }
