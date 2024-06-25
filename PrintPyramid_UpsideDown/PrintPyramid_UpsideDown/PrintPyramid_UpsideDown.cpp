@@ -14,7 +14,7 @@ int main()
 			printf("何段のピラミッドですか? ");
 			scanf("%d", &n);
 		} while (n <= 0);
-		PrintPyramid_UpsideDown(n);
+ 		PrintPyramid_UpsideDown(n);
 	}
 	return 0;
 }
@@ -22,8 +22,24 @@ int main()
 void PrintPyramid_UpsideDown(int n)
 {
 	// ここをコーディングしてください。
-	for (int i = 1; i <= n; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for(int j = )
+		for (int j = n; j >= 0; j--)
+		{
+			if (j < n - i)
+			{
+				printf("%d", i + 1);
+				
+			}
+			else
+			{
+				printf(" ");
+			}
+		}
+		for (int k = 1; k < n - i; k++)
+		{
+			printf("%d", i + 1);
+		}
+		putchar('\n');
 	}
 }
