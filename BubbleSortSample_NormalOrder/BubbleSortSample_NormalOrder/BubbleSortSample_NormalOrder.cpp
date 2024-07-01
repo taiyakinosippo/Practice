@@ -48,8 +48,8 @@ void BubbleSort(int array[], int arraySize)
 	// list6-1では、以下のように、配列を逆順に操作していましたが、
 	// for(int j=arraySize-1; j>i; j--) 
 	// これを正順に走査するようにしてください。
-	for (int i = 0; i < arraySize - 1; i++) {
-		for (int j = 0; j < arraySize - 1; j++) {
+	for (int i = 1; i < arraySize - 1; i++) {
+		for (int j = 0; j < arraySize - i; j++) {
 			if (array[j] > array[j + 1]) {
 				swap(int, array[j], array[j + 1]);
 			}
