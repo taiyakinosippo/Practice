@@ -18,7 +18,7 @@ int main()
     int yes;
     do {
         int num = rand();
-        int radix = 10;//rand() % 34 + 2;  // radix=2～36
+        int radix = rand() % 34 + 2;  // radix=2～36
         card_convert(buff, num, radix);
 
         printf("%d を基数%3d で表示すると %s\n", num, radix, buff);
@@ -29,35 +29,28 @@ int main()
     return 0;
 }
 
-int card_convert(char* buff, int radix, int num)
+int card_convert(char* buff, int num, int radix)
 {
     // ここをコーディングしてください。
     char dchar[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int digits = 0;
-    if (radix == 0)
-    {
-        buff[digits++] = dchar[radix % num];
+    if (num == 0) {
+        
+        buff[digits++] = dchar[0];
     }
     else
     {
-
-        while (radix)
-        {
-            buff[digits++] = dchar[radix % num];
-            radix /= num;
+        while (num != 0) {
+            
+            buff[digits++] = dchar[num % radix];
+            printf_s("%d|%7d   ・・・ %d\n--+--------\n", radix, num, num % radix);
+            num /= radix;
         }
+        printf("         0\n");
     }
-
-    
-    for (int i = 0; i < digits / 2; i++)
-    {
-        int a = 0;
-        for (int i = 0; i < digits / 2; i++)
-        {
-            a = buff[i];
-            buff[i] = buff[digits - i - 1];
-            buff[digits - i - 1] = a;
-        }
+    for (int i = 0; i < digits / 2; i++) {
+        SWAP(char, buff[i], buff[digits - 1 - i]);
     }
-    return 0;
+    buff[digits] = '\0';
+    return digits;
 }

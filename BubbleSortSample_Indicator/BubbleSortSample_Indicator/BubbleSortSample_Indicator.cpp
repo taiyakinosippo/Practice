@@ -50,7 +50,27 @@ void BubbleSort(int array[], int arraySize)
 	int hikaku = 0;
 	int koukann = 0;
 	for (int i = 0; i < arraySize - 1; i++) {
+		printf("ƒpƒX%d\n", i + 1);
 		for (int j = arraySize - 1; j > i; j--) {
+			for (int k = 0; k < arraySize; k++)
+			{
+				
+				if (k == j)
+				{
+					if (array[j - 1] > array[j])
+					{
+						printf("+ ");
+						printf("%2d ", array[k]);
+						continue;
+					}
+					else {
+						printf("- ");
+						printf("%2d ", array[k]);
+						continue;
+					}
+				}printf(" %2d ", array[k]);
+
+			}printf("\n"); 
 			hikaku++;
 			if (array[j - 1] > array[j]) {
 				swap(int, array[j - 1], array[j]);
