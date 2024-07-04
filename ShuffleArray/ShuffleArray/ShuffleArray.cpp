@@ -10,6 +10,7 @@ void ShuffleArray(int srcArray[], int dstArray[], int arraySize);
 void setRandomArray(int array[], int arraySize);
 void dumpArray(int array[], int arraySize);
 
+int randRange(int min, int max);
 int main()
 {
     srand(time(nullptr));
@@ -39,6 +40,16 @@ int main()
 void ShuffleArray(int array[], int arraySize)
 {
     // ここをコーディングしてください。
+    for (int i = 0; i < 100; i++)
+    {
+        int rand1 = randRange(0, arraySize);
+        int rand2 = randRange(0, arraySize);
+        int a = array[rand1];
+        array[rand1] = array[rand2];
+        array[rand2] = a;
+
+    }
+    
 }
 
 void setRandomArray(int array[], int arraySize)
